@@ -1,0 +1,8 @@
+.editor-container {
+    min-height: 85%;
+    max-height: 85%;
+    overflow-y: auto;
+    border: 2px solid #62abdf;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}

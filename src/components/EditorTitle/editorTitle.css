@@ -1,0 +1,40 @@
+.title-text {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 700;
+    font-size: larger;
+    
+    
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: inherit;
+    outline: none;
+    resize: none;
+    width: fit-content;
+    min-width: 70%;
+    border: none;
+    color: rgb(34, 73, 180);
+    text-align: center;
+  }
+
+
+
+  /* .title-text {
+    font-size: 1.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 700;
+    font-size: larger;
+  
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */

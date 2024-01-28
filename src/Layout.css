@@ -1,0 +1,21 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+  color: rgb(241, 11, 11);
+  margin-top: 0.5rem;
+}
