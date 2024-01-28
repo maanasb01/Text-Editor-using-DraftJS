@@ -1,19 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef} from "react";
 import "./infoModal.css";
 
 export default function InfoModal({ openModal, closeModal }) {
-  const ref = useRef();
+  const modalRef = useRef();
 
   useEffect(() => {
     if (openModal) {
-      ref.current?.showModal();
+      modalRef.current?.showModal();
     } else {
-      ref.current?.close();
+      modalRef.current?.close();
     }
   }, [openModal]);
 
   return (
-    <dialog className="dialog" ref={ref} onCancel={closeModal}>
+    <dialog className="dialog" ref={modalRef} onCancel={closeModal}>
       <p>This is an editor developed using Draft-JS.</p>
       <ul>
         <li>

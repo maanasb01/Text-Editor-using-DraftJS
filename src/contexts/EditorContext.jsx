@@ -25,4 +25,3 @@ export const EditorProvider = ({ children }) => {
     </EditorContext.Provider>
   );
 };
-

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import {
   Editor,
   EditorState,
@@ -7,17 +7,14 @@ import {
   SelectionState,
 } from "draft-js";
 import "draft-js/dist/Draft.css";
-import "./EditorComponent.css"
+import "./EditorComponent.css";
 import { styleMap } from "./constants";
 import { setSelection } from "./utils";
-import { useEditorContext } from "../../contexts/editorContext";
+import { useEditorContext } from "../../contexts/EditorContext";
 
 export default function EditorComponent() {
-  // const [editorState, setEditorState] = useState(previousEditorState?previousEditorState:() =>
-  //   EditorState.createEmpty()
-  // );
-  const {editorState,setEditorState} = useEditorContext();
-  
+  const { editorState, setEditorState } = useEditorContext();
+
   const editorRef = useRef(null);
 
   function handleKeyCommand(command, editorState) {
@@ -221,17 +218,19 @@ export default function EditorComponent() {
   }
 
   return (
-      <div className={"editor-container"} onClick={()=>editorRef.current.focus()}>
-        <Editor
-          ref={editorRef}
-          editorState={editorState}
-          onChange={setEditorState}
-          handleKeyCommand={handleKeyCommand}
-          placeholder="Enter Something..."
-          handleBeforeInput={handleBeforeInput}
-          customStyleMap={styleMap}
-        />
-      </div>
-    
+    <div
+      className={"editor-container"}
+      onClick={() => editorRef.current.focus()}
+    >
+      <Editor
+        ref={editorRef}
+        editorState={editorState}
+        onChange={setEditorState}
+        handleKeyCommand={handleKeyCommand}
+        placeholder="Enter Something..."
+        handleBeforeInput={handleBeforeInput}
+        customStyleMap={styleMap}
+      />
+    </div>
   );
 }
