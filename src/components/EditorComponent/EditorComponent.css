@@ -4,5 +4,34 @@
   overflow-y: auto;
   border: 2px solid #62abdf;
   padding: 0.5rem;
+}
+
+.editor-header {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0.5rem;
+}
+
+.editorHeader-controls {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  user-select: none;
+  display: flex;
+}
+
+.editorHeader-styleButton {
+  color: #999;
+  cursor: pointer;
+  padding: 4px 5px;
+  display: inline-block;
+  border-top: solid #62abdf;
+  border-left: solid #62abdf;
+}
+
+.editorHeader-styleButton:last-child{
+  border-right: solid #62abdf;
+}
+
+.editorHeader-activeButton {
+  color: #5890ff;
 }
