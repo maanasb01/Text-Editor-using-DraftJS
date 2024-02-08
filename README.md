@@ -1,20 +1,26 @@
-# This is a Text Editor developed using Draft-JS.
+# A Text Editor built with Draft-JS, offering convenient shortcuts and styling features.
 
-*   **Styling:**
-    *   At the start of a line (whether the line is empty or has some text), inserting "#" then pressing SPACE would make that line a heading.
+## Features
+*   **General:**
+    *   All the general shortcuts like CTRL+I for Italics or CTRL+B for Bold, etc. are applicable.
+    *   The shortcut stylings, like bold and underline, would apply to the whole block. However, if applied through the Editor's Header, they would function normally as expected.
+*   **Styling and Block-Types Shortcuts:**
+    *   At the start of a line (whether the line is empty or has some text), inserting "#" then pressing SPACE would make that line a Heading-One. Similarly, "##" for Heading-Two, "###" for Heading-Three, and so on up to Heading-Six.
+    *   Similarly, "-" then press SPACE, to make the block-type an unordered list and, "1" then press SPACE, for ordered list.
+    *   Similarly, " \`\` " then press SPACE, to make the block-type a code-block.
     *   Similarly, inserting "\*" then pressing SPACE would make the text of that line bold.
-    *   Similarly, inserting "\*\*" then pressing SPACE would make the text of that line red.
-    *   Similarly, inserting "\*\*\*" then pressing SPACE would underline the text of that line.
+    *   Similarly, inserting "\*\*" then pressing SPACE would underline the text of that line.
 *   **Remove Styling:**
-    *   Pressing Enter would continue the style of the previous line.
-    *   To change the format from heading to normal, put the cursor at the start of the line (with text or new line) and press BACKSPACE.
-    *   To remove the styles (bold, red color, and underline) of any line (with text or new line), put the cursor at the start of the line and press SPACE.
+    *   Pressing Enter would continue the style and block-type of the previous line.
+    *   To change the format from heading to normal, put the cursor at the start of the line (with text or new line) and press BACKSPACE, or simply toggle it from the Editor's Header.
+    *   To remove the shortcut-styles (bold, color, and underline) of any line (with text or new line), put the cursor at the start of the line and press SPACE.
 *   **To Save:**
     *   To SAVE the Editor's content, press Save button and the content would be saved in the browser's local-storage.
     *   Title can be edited by clicking on it. To save the title to browser's local-storage, while typing, either press ENTER or ESC, or simply unfocus from typing.
  
 ## Table of Contents
 
+- [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
