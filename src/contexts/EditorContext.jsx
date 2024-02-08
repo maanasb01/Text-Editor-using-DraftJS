@@ -18,9 +18,10 @@ export const EditorProvider = ({ children }) => {
       return EditorState.createEmpty();
     }
   });
+  const [selectedColor, setSelectedColor] = useState('black');
 
   return (
-    <EditorContext.Provider value={{ editorState, setEditorState }}>
+    <EditorContext.Provider value={{ editorState, setEditorState,selectedColor, setSelectedColor }}>
       {children}
     </EditorContext.Provider>
   );
