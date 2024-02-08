@@ -17,7 +17,16 @@
 *   **To Save:**
     *   To SAVE the Editor's content, press Save button and the content would be saved in the browser's local-storage.
     *   Title can be edited by clicking on it. To save the title to browser's local-storage, while typing, either press ENTER or ESC, or simply unfocus from typing.
- 
+
+## Demo Video
+
+https://github.com/maanasb01/Text-Editor-using-DraftJS/assets/94924895/8b3b31be-e8b8-44fd-9afc-8d78249bc801
+
+## Photos
+
+![textEditor1](https://github.com/maanasb01/Text-Editor-using-DraftJS/assets/94924895/107a6eb9-f558-44ad-a612-ec8e6148f87c)
+![textEditor2](https://github.com/maanasb01/Text-Editor-using-DraftJS/assets/94924895/deaf3469-d68b-4a2b-92d1-d8f3c38cc938)
+
 ## Table of Contents
 
 - [Features](#features)
